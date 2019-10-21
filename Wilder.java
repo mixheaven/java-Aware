@@ -27,9 +27,6 @@ public class Wilder {
 		return this.firstname;
 	}
 	public boolean isAware() {
-		while(this.aware = false) {
-			
-		}
 		return this.aware;
 	}
 	//mutateur

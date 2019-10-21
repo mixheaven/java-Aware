@@ -9,8 +9,6 @@ public class Classroom {
 		jeanClaude.setAware(true);
 		System.out.println("1." + jeanClaude.whoAmI());
 		
-		
-		
 		Wilder henri = new Wilder("Henri", false);
 		System.out.println("2. " + henri.whoAmI());
 
