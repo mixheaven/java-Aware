@@ -1,4 +1,3 @@
-package projet1;
 
 public class Wilder {
 	//atributs
@@ -8,20 +7,20 @@ public class Wilder {
 	//constructeur
 	public Wilder(String firstname) {
 		this.firstname = firstname;
-		this.aware = aware;
+		this.aware = false;
 	}
 		
 	public Wilder(String firstname, boolean aware) {
 		this.firstname = firstname;
 		this.aware = aware;
-		}
-	//methode statique
-	public static String whoAmI() {
-		return "Comment je m'appelle?";
 	}
 	//methode instanciée
-	public String firstnameAndAware() {
-		return "Je m'appelle " + this.getFirstname() + " et je ne suis pas " + String.valueOf(isAware());
+	public String whoAmI() {
+		if (!this.aware)
+			return "Je m'appelle " + this.getFirstname() + " et je ne suis pas aware";
+		else
+			return "Je m'appelle " + this.getFirstname() + " et je suis aware";
+
 	}
 	//accesseurs
 	public String getFirstname() {
